@@ -1,3 +1,9 @@
+# Git push
+```
+git commit -m "first commit"
+git branch -M main
+git push -u origin main
+```
 # Gulp starter
 
 All packages are configured in the package.json.  
