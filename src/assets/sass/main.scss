@@ -1,9 +1,26 @@
-html {
-  box-sizing: border-box;
-  font-size: 16px;
-  background-color: lime;
-}
+/*!
+***
+* TFA Project
+***
+* Projet scolaire pour mon TFA de B2
+* option DWM
+*
+* @version: 1.0
+* @author: François Szczepkowski <francois.szcz@hotmail.fr>
+*
+***
+*/
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
+@use "_normalize.scss";
+@use "_type.scss";
+@use "_layout.scss";
+@use "_grid.scss";
+@use "_list.scss";
+@use "_var.scss" as v;
+
+/**
+* = TODO
+*
+*
+*
+* ========================================================== */

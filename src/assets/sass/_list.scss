@@ -1,0 +1,41 @@
+/*
+ * LISTES
+** =============================================================== */
+
+/* *MENU 
+.menu{
+
+}
+.menu__liste{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu__el{
+
+}
+.menu__el a{
+    text-decoration: none;
+}
+.menu__el a:hover,.menu__el a:focus{
+    text-decoration: underline;
+}
+*/
+.menu{
+
+    &__liste{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    &__el{
+
+        a{
+            text-decoration: none; 
+
+            &:hover,&:focus{
+                text-decoration: underline; 
+            }
+        }
+    }
+}

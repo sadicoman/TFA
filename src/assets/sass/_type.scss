@@ -1,0 +1,20 @@
+/*
+ * TYPOGRAPHIES
+** =============================================================== */
+
+@use "_var.scss" as v;
+
+.body{
+    font-family: v.$font-text;
+    font-size: 18px;
+    line-height: 1.5;
+    color:var(--color-on-background);
+    background-color: var(---color-background);
+}
+
+/* Styles des TITRES */
+.title{
+    font-size: 34px;
+    font-family: v.$font-title;
+}
+
