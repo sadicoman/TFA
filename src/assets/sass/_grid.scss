@@ -1,3 +1,42 @@
 /*
- * GRILLES
+ * GRILLES CSS
 ** =============================================================== */
+
+/* Navigation Menu */
+.header{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 20px;
+}
+.navBtn{
+    grid-column: 2 / 3;
+	justify-self: end;
+	align-self: center;
+}
+
+/* Main */
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 8px 8px;
+    padding: 0px 18px;
+    margin-bottom: 36px;
+}
+.grid > *{
+    grid-column: 1 / -1;
+}
+.section--telechargement{
+    justify-items: center;
+    text-align: center;
+}
+
+/* FOOTER */
+.grid--foter > *{
+    justify-self: center;
+}
+.grid--foter{
+    padding: 18px;
+    margin-bottom: 0px;
+    font-size: 15px;
+    grid-gap: 16px 8px;
+}

@@ -1,3 +1,129 @@
 /*
  * LAYOUT
 ** =============================================================== */
+
+@use "_var.scss";
+
+/* BODY */
+body[data-theme="dark"] {
+    background: radial-gradient(circle, #045D10 0%, #03440C 100%);
+}
+
+/* Burger Menu */
+.navBtn{
+	background-color: inherit;
+	width: 40px;
+	height: 40px;
+	border: none;
+    z-index: 3;
+    border: none;
+	cursor: pointer;
+	color: var(--color-on-primary);
+	padding: 0;
+}
+.navBtn__svg{
+ fill: var(--color-on-primary);
+}
+.navBtn--croix{
+	display: none;
+}
+body[data-menu] .menu{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--color-primary);
+    z-index: 2;
+}
+body[data-menu] .main {
+    visibility: collapse;
+    display: none;
+}
+
+/* Menu Navigation */
+.header{
+    padding: 10px;
+    margin-bottom: 36px;
+}
+.menu{
+    display: none;
+}
+
+/* Switch DarkMode */
+.switch{
+	margin: 10px;
+	grid-column: 2 / 3;
+	justify-self: end;
+	align-self: center;
+}
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+.label {
+	background-color: var(--color-primary);
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 20px;
+	width: 50px;
+	transform: scale(1.5);
+	box-sizing: border-box;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.225);
+}
+.svg--color{
+	fill: #000000;
+}
+.ball {
+	background-color: #000;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 6px;
+	height: 16px;
+	width: 16px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+.checkbox:checked + .label .ball {
+	transform: translateX(21px);
+}
+
+/* Cacher du texte */
+.btn--sanstexte {
+    overflow: hidden;
+    position: relative;
+    display: none;
+
+    .btnContent{
+        text-indent: 100%;
+        white-space: nowrap;
+        position: absolute;
+    }
+}
+
+/* Main */
+.section:last-child{
+    margin-bottom: 72px;
+}
+.btn{
+    margin-top: 18px;
+    background-color: var(--color-primary);
+    border-radius: 15px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+.btn:hover, .btn:focus{
+    background-color: var(--color-primary-hover);
+}
+
+/* Footer */
+.footer{
+    background-color: var(--color-primary);
+}

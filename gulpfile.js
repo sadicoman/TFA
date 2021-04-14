@@ -43,14 +43,25 @@ const html = () => {
 		.pipe(gulp.dest( './dist/'));
 }
 
+const fonts = () => {
+	return gulp.src([
+		"./src/assets/fonts/**/*.woff",
+		"./src/assets/fonts/**/*.woff2"
+	])
+		.pipe(gulp.dest('./dist/assets/fonts/'));
+}
+
 const watchFiles = () => {
 	gulp.watch("./src/assets/sass/**/*.scss", styles);
 	gulp.watch("./src/assets/js/**/*.js", javascript);
 	gulp.watch([
+		"./src/assets/fonts/**/*.woff",
+		"./src/assets/fonts/**/*.woff2"
+	], fonts);
+	gulp.watch([
 		"./src/assets/images/**/*.jpg",
 		"./src/assets/images/**/*.png",
-		"./src/assets/images/**/*.gif",
-		"./src/assets/images/**/*.svg"
+		"./src/assets/images/**/*.gif"
 	], compressImages);
 	gulp.watch("./src/*.html", gulp.series(html, browserReload));
 }
@@ -74,8 +85,7 @@ const compressImages = () => {
 	return gulp.src([
 		"./src/assets/images/**/*.jpg",
 		"./src/assets/images/**/*.png",
-		"./src/assets/images/**/*.gif",
-		"./src/assets/images/**/*.svg"
+		"./src/assets/images/**/*.gif"
 	  ])
 	 .pipe(imagemin({
 		 progressive: true,
@@ -84,7 +94,7 @@ const compressImages = () => {
 	 .pipe(gulp.dest('./dist/assets/images/'))
 }
 
-const build = gulp.series(html, styles, javascript, compressImages);
+const build = gulp.series(html, styles, javascript, compressImages, fonts);
 const watch = gulp.series(build, gulp.parallel(watchFiles, browserSync));
 const compress = gulp.series(compressImages);
 

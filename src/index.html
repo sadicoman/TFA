@@ -34,6 +34,79 @@
 
 </head>
 <body class="body">
-	<h1 class="title">Gulp Starter Pack TFA</h1>
+	<header class="header boxShadow">
+		<img src="" alt="Logo phasmidaé">
+		<nav class="menu">
+			<ul class="menu__liste">
+				<li class="menu__el"><a href="#oeufs" class="lien">OEUFS</a></li>
+				<li class="menu__el"><a href="#alimentation" class="lien">ALIMENTATION</a></li>
+				<li class="menu__el"><a href="#matériel" class="lien">MATÉRIEL</a></li>
+				<li class="menu__el"><a href="#téléchargement" class="lien">TÉLÉCHARGEMENT</a></li>
+			</ul>
+		</nav>
+		<button class="navBtn">
+			<svg class="navBtn__svg" id="navBtn--bergur" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  width="36px" height="36px"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+			<svg class="navBtn__svg navBtn--croix" id="navBtn--croix" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  width="36px" height="36px"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+		</button>   
+		<div class="switch header__btn" id="switch">
+			<input type="checkbox" class="checkbox js-theme-trigger" id="chk">
+			<label class="label" for="chk">
+				<!-- Lune -->
+				<svg class="svg--color" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+					<path d="M125.9 133.4c-23.4.1-42.4-18.7-42.5-42.1s18.7-42.4 42.1-42.5c3.8 0 7.5.5 11.2 1.4-27.3-19.6-65.3-13.3-84.9 14s-13.3 65.3 14 84.9 65.3 13.3 84.9-14c4-5.6 7.1-11.9 9-18.6-8 10.6-20.5 16.9-33.8 16.9z"/>
+				</svg>
+				<!-- Soleil -->
+				<svg class="svg--color" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+					<circle cx="100" cy="99.5" r="38.5"/>
+					<path d="M100 50.5c-2.7 0-4.9-2.2-4.9-4.8V24.5c0-2.7 2.2-4.9 4.9-4.9s4.9 2.2 4.9 4.9v21.1c0 2.7-2.2 4.9-4.9 4.9zM100 180.4c-2.7 0-4.9-2.2-4.9-4.9v-21.1c0-2.7 2.2-4.9 4.9-4.9s4.9 2.2 4.9 4.9v21.1c0 2.7-2.2 4.8-4.9 4.9zM175.5 104.9h-21.1c-2.7 0-4.9-2.2-4.9-4.9s2.2-4.9 4.9-4.9h21.1c2.7 0 4.9 2.2 4.9 4.9s-2.2 4.9-4.9 4.9zM24.5 104.9h21.1c2.7 0 4.9-2.2 4.9-4.9s-2.2-4.9-4.9-4.9H24.5c-2.7 0-4.9 2.2-4.9 4.9s2.2 4.9 4.9 4.9zM61.6 66.4c-1.3 0-2.5-.5-3.4-1.4l-15-15c-1.9-1.9-1.9-5 0-6.9s5-1.9 6.9 0l15 14.9c1.9 1.9 1.9 5 0 6.9-1 1-2.2 1.5-3.5 1.5zM153.4 158.2c-1.3 0-2.5-.5-3.4-1.4l-15-14.9c-1.9-1.9-1.9-5 0-6.9s5-1.9 6.9 0l14.9 15c1.9 1.9 1.9 5 0 6.9-.9.9-2.1 1.4-3.4 1.3zM46.6 158.2c-2.7 0-4.8-2.2-4.8-4.9 0-1.2.5-2.4 1.4-3.3l14.9-15c1.9-1.9 5-1.9 6.9 0 1.9 1.9 1.9 5 0 6.9l-15 14.9c-.9.9-2.1 1.4-3.4 1.4zM138.4 66.4c-2.7 0-4.9-2.2-4.9-4.9 0-1.3.5-2.5 1.4-3.4l15-14.9c1.9-1.9 5-1.9 6.9 0s1.9 5 0 6.9l-15 15c-.8.8-2.1 1.3-3.4 1.3z"/>
+				</svg>
+				<span class="ball">
+					<span class="btn--sanstexte">
+						<span class="btnContent">Ball switcher</span>
+					</span>
+				</span>
+			</label>
+		</div>
+	</header>
+	<main class="main">
+		<section class="section section--phasmidae grid">
+			<h1 class="title">PHASMIDAÉ</h1>
+			<h2 class="title title--h2">C’est une brindille !
+				C’est une feuille ! 
+				Non c’est un phasme !</h2>
+			<h3 class="title title--h3">Phasmidaé, l'application pour bien élevés vos phasmes !</h3>
+		</section>
+		<section class="section section--caracteristique grid">
+			<h2 class="title title--h2">Des caractéristiques importantes des phasme.</h2>
+			<p></p>
+		</section>
+		<section id="oeufs" class="section section--oeufs grid">
+			<h2 class="title title--h2">Des petits oeufs !</h2>
+			<p></p>
+		</section>
+		<section id="alimentation" class="section section--alimentation grid">
+			<h2 class="title title--h2">Une bonne alimentation !</h2>
+			<p></p>
+		</section>
+		<section id="matériel" class="section section--materiel grid">
+			<h2 class="title title--h2">Un peut de matériel.</h2>
+			<p></p>
+		</section>
+		<section id="téléchargement" class="section section--telechargement grid">
+			<p class="bold">Testé l'application dès maintenant</p> 
+			<a href="" class="btn lien boxShadow">TESTER L'APPLICATION</a>
+		</section>
+	</main>
+	<footer class="footer boxShadow">
+		<div class="grid grid--foter">
+			<a href="http://dwm.re"><img src="assets/images/logo-DWM.svg" alt="Logo DWM"></a>
+			<ul class="navSecondaire">
+				<li class="navSecondaire__el"><a href="ui-kit.html" class="lien">UI-KIT</a></li>
+				<li class="navSecondaire__el"><a href="case-study.html" class="lien">CASE STUDY</a></li>
+				<li class="navSecondaire__el"><a href="credits.html" class="lien">CRÉDITS</a></li>
+			</ul>
+			<small class="grid--Cp"><a href="index.html" class="lien">François©<span id="year"> </span></a></small>
+		</div>
+	</footer>
 </body>
 </html>

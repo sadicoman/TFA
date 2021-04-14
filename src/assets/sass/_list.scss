@@ -27,15 +27,32 @@
         margin: 0;
         padding: 0;
         list-style: none;
+        margin: auto;
+        text-align: center;
     }
     &__el{
-
-        a{
-            text-decoration: none; 
-
-            &:hover,&:focus{
-                text-decoration: underline; 
-            }
+        border-bottom: #000 1px solid;
+        &:last-child{
+            border: none;
         }
+        a{
+            display: inline-block;
+            padding: 1em;
+            margin: .5em;
+            font-size: 25px;
+        }
+    }
+}
+
+/* FOOTER */
+.navSecondaire{
+    display: flex;
+    justify-content:space-between;
+}
+.navSecondaire__el{
+    padding: 10px;
+    border-right: #000 1px solid;
+    &:last-child{
+        border: none;
     }
 }

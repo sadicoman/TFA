@@ -18,9 +18,23 @@
 @use "_list.scss";
 @use "_var.scss" as v;
 
+.lien{
+    text-decoration: none; 
+    color: var(--color-on-primary);
+}
+.lien:hover, .lien:focus{
+    color: var(--color-secondary-variant);
+}
+.lien:visited{
+    color: rgb(19, 54, 129);
+}
+.boxShadow{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+}
+
 /**
 * = TODO
 *
-*
+* changer --color-background: darkMode (les deux  ligne: 26, 55)
 *
 * ========================================================== */

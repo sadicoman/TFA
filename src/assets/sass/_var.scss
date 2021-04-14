@@ -3,68 +3,63 @@
 ** =============================================================== */
 
 /* Color and DarkTheme */
-/*
 :root{
-	--color-primary:;
-	--color-primary-variant:;
-	--color-secondary:;
-	--color-secondary-variant:;
-	--color-background:;	
-	--color-surface:;
-	--color-error:;
-	--color-on-primary:;
-	--color-on-secondary:;
-	--color-on-background:;
-	--color-on-surface:;
-	--color-on-error:;
-	--color-on-primary-hover:;
+	--color-primary:			#06B131;
+	--color-primary-variant:	#069E2D;
+	--color-secondary:			#058E3F;
+	--color-secondary-variant:	#04773B;
+	--color-background:			#F1F1F1;	
+	--color-error:				#FF0000;
+	--color-primary-hover:		#B6EA20;
+	--color-on-primary:			#000000;
+	--color-on-secondary:		#000000;
+	--color-on-background:		#000000;
+	--color-on-error:			#000000;
+	--color-on-primary-hover:	#000000;
 }
-@media(prefers-color-sheme: dark){
-    --color-primary:;
-	--color-primary-variant:;
-	--color-secondary:;
-	--color-secondary-variant:;
-	--color-background:;	
-	--color-surface:;
-	--color-error:;
-	--color-on-primary:;
-	--color-on-secondary:;
-	--color-on-background:;
-	--color-on-surface:;
-	--color-on-error:;
-	--color-on-primary-hover:;  
+@media (prefers-color-scheme: dark) {
+	:root{
+		--color-primary:			#06B131;
+		--color-primary-variant:	#069E2D;
+		--color-secondary:			#058E3F;
+		--color-secondary-variant:	#04773B;
+		--color-error:				#FF0000;
+		--color-primary-hover:		#B6EA20;
+		--color-on-primary:			#000000;
+		--color-on-secondary:		#000000;
+		--color-on-background:		#ffffff;
+		--color-on-error:			#000000;
+		--color-on-primary-hover:	#000000;  
+	}
 }
 [data-theme="light"]{
-    --color-primary:;
-	--color-primary-variant:;
-	--color-secondary:;
-	--color-secondary-variant:;
-	--color-background:;	
-	--color-surface:;
-	--color-error:;
-	--color-on-primary:;
-	--color-on-secondary:;
-	--color-on-background:;
-	--color-on-surface:;
-	--color-on-error:;
-	--color-on-primary-hover:;      
+	--color-primary:			#06B131;
+	--color-primary-variant:	#069E2D;
+	--color-secondary:			#058E3F;
+	--color-secondary-variant:	#04773B;
+	--color-background:			#F1F1F1;	
+	--color-error:				#FF0000;
+	--color-primary-hover:		#B6EA20;
+	--color-on-primary:			#000000;
+	--color-on-secondary:		#000000;
+	--color-on-background:		#000000;
+	--color-on-error:			#000000;
+	--color-on-primary-hover:	#000000;   
 }
 [data-theme="dark"]{
-    --color-primary:;
-	--color-primary-variant:;
-	--color-secondary:;
-	--color-secondary-variant:;
-	--color-background:;	
-	--color-surface:;
-	--color-error:;
-	--color-on-primary:;
-	--color-on-secondary:;
-	--color-on-background:;
-	--color-on-surface:;
-	--color-on-error:;
-	--color-on-primary-hover:;      
+	--color-primary:			#06B131;
+	--color-primary-variant:	#069E2D;
+	--color-secondary:			#058E3F;
+	--color-secondary-variant:	#04773B;
+	--color-error:				#FF0000;
+	--color-primary-hover:		#B6EA20;
+	--color-on-primary:			#000000;
+	--color-on-secondary:		#000000;
+	--color-on-background:		#ffffff;
+	--color-on-error:			#000000;
+	--color-on-primary-hover:	#000000;   
 }
-*/
+
 /* Type */
-$font-text: sans-serif;
-$font-title: sans-serif;
+$font-text:"SometypeMono", sans-serif;
+$font-title:"SometypeMono", sans-serif;

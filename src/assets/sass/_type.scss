@@ -4,12 +4,52 @@
 
 @use "_var.scss" as v;
 
+/* Import font-face */
+@font-face {
+    font-family: 'SometypeMono';
+    font-display: swap;
+    src: url(../fonts/SometypeMono-Bold.woff2) format("woff2"), url(../fonts/SometypeMono-Bold.woff) format("woff");
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'SometypeMono';
+    font-display: swap;
+    src: url(../fonts/SometypeMono-BoldItalic.woff2) format("woff2"), url(../fonts/SometypeMono-BoldItalic.woff) format("woff");
+    font-weight: bold;
+    font-style:  italic;
+}
+@font-face {
+    font-family: 'SometypeMono';
+    font-display: swap;
+    src: url(../fonts/SometypeMono-Regular.woff2) format("woff2"), url(../fonts/SometypeMono-Regular.woff) format("woff");
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'SometypeMono';
+    font-display: swap;
+    src: url(../fonts/SometypeMono-RegularItalic.woff2) format("woff2"), url(../fonts/SometypeMono-RegularItalic.woff) format("woff");
+    font-weight: normal;
+    font-style:  italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .body{
     font-family: v.$font-text;
     font-size: 18px;
     line-height: 1.5;
     color:var(--color-on-background);
-    background-color: var(---color-background);
+    background-color: var(--color-background);
 }
 
 /* Styles des TITRES */
@@ -17,4 +57,14 @@
     font-size: 34px;
     font-family: v.$font-title;
 }
+.title--h2{
+    font-size: 27px;
+}
+.title--h3{
+    font-size: 22px;
+}
 
+/* Main */
+.bold{
+    font-weight: bold;
+}
