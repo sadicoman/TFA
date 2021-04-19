@@ -18,17 +18,29 @@
 .grid{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-gap: 8px 8px;
+    grid-gap: 18px 8px;
     padding: 0px 18px;
     margin-bottom: 36px;
 }
 .grid > *{
     grid-column: 1 / -1;
 }
+.grid--icone{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px 8px;
+}
 .section--telechargement{
     justify-items: center;
     text-align: center;
 }
+.mgrid-start2{
+    grid-column-start: 2;
+}
+.mgrid-end4{
+    grid-column-end: 4;
+}
+
 
 /* FOOTER */
 .grid--foter > *{
@@ -39,4 +51,87 @@
     margin-bottom: 0px;
     font-size: 15px;
     grid-gap: 16px 8px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+	/* Main */
+    .grid {
+        grid-template-columns: 1fr 2fr 1fr 2fr;
+        grid-gap: 18px 18px;
+    }
+    .tgrid-start1{
+        grid-column-start: 1;
+    }
+    .tgrid-start2{
+        grid-column-start: 2;
+    }
+    .tgrid-start4{
+        grid-column-start: 4;
+    }
+    .tgrid-end3{
+        grid-column-end: 3;
+    }
+    .tgrid-end4{
+        grid-column-end: 4;
+    }
+    .tgridRow-start1{
+        grid-row-start: 1;
+    }
+    .icone{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        .icone__el{
+            margin: 10px;
+        }
+    }
+    .grid--icone{
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+    .grid--nav{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .grid {
+        grid-template-columns: repeat(7, 1fr);
+        grid-gap: 36px 54px;
+    }
+    .pgrid-start1{
+        grid-column-start: 1;
+    }
+    .pgrid-start2{
+        grid-column-start: 2;
+    }
+    .pgrid-start3{
+        grid-column-start: 3;
+    }
+    .pgrid-start4{
+        grid-column-start: 4;
+    }
+    .pgrid-start5{
+        grid-column-start: 5;
+    }
+    .pgrid-end5{
+        grid-column-end: 5;
+    }
+    .pgrid-end7{
+        grid-column-end: 7;
+    }
+    .pgridRow-start1{
+        grid-row-start: 1;
+    }
+    .grid--icone{
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+    .header{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .header > *{
+        grid-column: 2 / -2;
+    }
 }

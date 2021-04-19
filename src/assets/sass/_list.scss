@@ -2,6 +2,8 @@
  * LISTES
 ** =============================================================== */
 
+@use "_var.scss";
+
 /* *MENU 
 .menu{
 
@@ -35,7 +37,7 @@
         &:last-child{
             border: none;
         }
-        a{
+        .lien{
             display: inline-block;
             padding: 1em;
             margin: .5em;
@@ -54,5 +56,22 @@
     border-right: #000 1px solid;
     &:last-child{
         border: none;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .menu{
+        display: inherit;
+        &__el{
+            border-right: #fff 1px solid;
+            border-bottom: none;
+            &:last-child{
+                border: none;
+            }
+            .lien{
+                font-size: 1em; 
+            }
+        }
     }
 }

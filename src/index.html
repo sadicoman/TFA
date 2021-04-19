@@ -8,6 +8,8 @@
 	<link href="assets/css/main.css" rel="stylesheet" >
 	<script src="assets/js/main.min.js" defer></script>
 
+	<link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+
 	<!-- Google -->
 	<meta name="title" content="François Szczepkowski - ">
 	<meta name="description" content="Heaj - DWM -  - Francois Szczepkowski">
@@ -30,14 +32,25 @@
 	<meta property ="og:image:width" content="1800">
 	<meta property ="og:image:height" content="945">
 
-	<link rel="icon" href="assets/images/rux.png"/>
+	<link rel="icon" href="assets/images/favicon.svg"/>
+
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="assets/images/favicon/site.webmanifest">
+	<link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="apple-mobile-web-app-title" content="Phasmida&eacute;">
+	<meta name="application-name" content="Phasmida&eacute;">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
 
 </head>
 <body class="body">
 	<header class="header boxShadow">
-		<img src="" alt="Logo phasmidaé">
-		<nav class="menu">
-			<ul class="menu__liste">
+		<img class="header__img pgridRow-start1" src="assets/images/Logo_Phasmidae.svg" alt="Logo Phasmidaé">
+		<nav class="menu tgrid-start1 tgrid-end3">
+			<ul class="menu__liste grid--nav">
 				<li class="menu__el"><a href="#oeufs" class="lien">OEUFS</a></li>
 				<li class="menu__el"><a href="#alimentation" class="lien">ALIMENTATION</a></li>
 				<li class="menu__el"><a href="#matériel" class="lien">MATÉRIEL</a></li>
@@ -48,7 +61,7 @@
 			<svg class="navBtn__svg" id="navBtn--bergur" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  width="36px" height="36px"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
 			<svg class="navBtn__svg navBtn--croix" id="navBtn--croix" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  width="36px" height="36px"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
 		</button>   
-		<div class="switch header__btn" id="switch">
+		<div class="switch header__btn tgridRow-start1" id="switch">
 			<input type="checkbox" class="checkbox js-theme-trigger" id="chk">
 			<label class="label" for="chk">
 				<!-- Lune -->
@@ -70,31 +83,41 @@
 	</header>
 	<main class="main">
 		<section class="section section--phasmidae grid">
-			<h1 class="title">PHASMIDAÉ</h1>
-			<h2 class="title title--h2">C’est une brindille !
-				C’est une feuille ! 
-				Non c’est un phasme !</h2>
-			<h3 class="title title--h3">Phasmidaé, l'application pour bien élevés vos phasmes !</h3>
+			<h1 class="title pgrid-start2">PHASMIDAÉ</h1>
+			<h2 class="title title--h2 title--troisLigne pgrid-start2">C’est&nbsp;une brindille&nbsp;!
+				C’est une feuille&nbsp;! 
+				Non&nbsp;c’est un phasme&nbsp;!</h2>
+			<h3 class="title title--h3 tgrid-end4 pgrid-start2 pgrid-end5">Phasmidaé,&nbsp;l'application pour bien élever vos phasmes ramulus et phylium&nbsp;!</h3>
 		</section>
 		<section class="section section--caracteristique grid">
-			<h2 class="title title--h2">Des caractéristiques importantes des phasme.</h2>
-			<p></p>
+			<img class="images tgrid-start4 pgrid-start2 pgrid-end5 pgridRow-start1"  src="assets/images/pasmidae_gsm.png" srcset="assets/images/pasmidae_gsm@2x.png 2x" alt=" "/>
+			<p class="tgrid-end4 tgridRow-start1 pgrid-start4 pgrid-end7">Vous&nbsp;en avez assez de chercher des informations basiques sur l'élevage de phasme&nbsp;?&nbsp;
+				Vous&nbsp;trouvez que les informations sont disparates&nbsp;?&nbsp;
+				Avec&nbsp;Phasmidaé,&nbsp;trouvé toutes les informations que vous voulez vraiment&nbsp;!</p>
 		</section>
 		<section id="oeufs" class="section section--oeufs grid">
-			<h2 class="title title--h2">Des petits oeufs !</h2>
-			<p></p>
-		</section>
-		<section id="alimentation" class="section section--alimentation grid">
-			<h2 class="title title--h2">Une bonne alimentation !</h2>
-			<p></p>
-		</section>
-		<section id="matériel" class="section section--materiel grid">
-			<h2 class="title title--h2">Un peut de matériel.</h2>
-			<p></p>
+			<h2 class="title title--h2">Trois&nbsp;grands&nbsp;principes</h2>
+			<ul class="icone pgrid-start2 pgrid-end7">
+				<li class="icone__el icone--oeufs grid grid--icone" id="oeufs">
+					<img class="mgrid-start2 mgrid-end4 tgrid-start2 tgrid-end3" src="assets/images/oeufs_actif.svg" alt="">
+					<h3 class="title title--h3">Des&nbsp;petits oeufs&nbsp;!</h3>
+					<p>Les&nbsp;bons trucs à savoir pour bien s'occuper de nos petits&nbsp;œufs</p>
+				</li>
+				<li class="icone__el icone--feuille grid grid--icone" id="alimentation">
+					<img class="mgrid-start2 mgrid-end4 tgrid-start2 tgrid-end3" src="assets/images/feuille_actif.svg" alt="">
+					<h3 class="title title--h3 tgrid-end4">Un&nbsp;bon repas&nbsp;!</h3>
+					<p>Les&nbsp;meilleurs choix de nourriture par rapport à mais différentes expérience&nbsp;personnelle</p>
+				</li>
+				<li class="icone__el icone--boite grid grid--icone" id="matériel">
+					<img class="mgrid-start2 mgrid-end4 tgrid-start2 tgrid-end3" src="assets/images/boite_actif.svg" alt="">
+					<h3 class="title title--h3">Un&nbsp;peu de matériel&nbsp;!</h3>
+					<p>Tout&nbsp;le matériel minimum pour bien s'en&nbsp;n'occupé</p>
+				</li>
+			</ul>
 		</section>
 		<section id="téléchargement" class="section section--telechargement grid">
-			<p class="bold">Testé l'application dès maintenant</p> 
-			<a href="" class="btn lien boxShadow">TESTER L'APPLICATION</a>
+			<p class="bold">Tester&nbsp;l'application dès&nbsp;maintenant</p> 
+			<a href="mvp/index.html" class="btn lien boxShadow">TESTER L'APPLICATION</a>
 		</section>
 	</main>
 	<footer class="footer boxShadow">

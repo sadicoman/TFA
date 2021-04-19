@@ -4,6 +4,11 @@
 
 @use "_var.scss";
 
+/* HEADER */
+.header__img{
+	width: 100%;
+}
+
 /* BODY */
 body[data-theme="dark"] {
     background: radial-gradient(circle, #045D10 0%, #03440C 100%);
@@ -122,8 +127,48 @@ body[data-menu] .main {
 .btn:hover, .btn:focus{
     background-color: var(--color-primary-hover);
 }
-
+.icone__el{
+	border-radius: 15px;
+	text-align: center;
+	border: 3px solid var(--color-secondary-variant);
+}
+.icone__el>:last-child{
+	padding-bottom: 18px;
+}
+.icone__el>:first-child{
+	padding-top: 18px;
+}
+.images{
+	width: 100%;
+}
 /* Footer */
 .footer{
     background-color: var(--color-primary);
+}
+@media screen and (min-width: 768px) {
+	.title--troisLigne{
+		max-width: 400px;
+	}
+	.navBtn, .switch{
+		padding-right: 10px;
+	}
+	.navBtn{
+		display: none;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.header__img{
+		max-width: 300px;
+	}
+	.main{
+		max-width: 1450px;
+		margin: auto;
+	}
+	.title--troisLigne{
+		max-width: 700px;
+	}
+	.images{
+		width: 50%;
+	}
 }

@@ -68,3 +68,18 @@
 .bold{
     font-weight: bold;
 }
+
+@media screen and (min-width: 1440px) {
+    .body{
+        font-size: 1.3em; 
+    }
+    .title{
+        font-size:3.1666666666666665em;
+    }
+    .title--h2{
+        font-size: 2.388888888888889em;
+    }
+    .title--h3{
+        font-size: 1.7777777777777777em;
+    }
+}
