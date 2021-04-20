@@ -124,9 +124,6 @@ body[data-menu] .main {
     padding: 10px 20px;
     text-transform: uppercase;
 }
-.btn:hover, .btn:focus{
-    background-color: var(--color-primary-hover);
-}
 .icone__el{
 	border-radius: 15px;
 	text-align: center;
@@ -203,6 +200,12 @@ body[data-menu] .main {
 .disabled:enabled {
     opacity: .6;
     cursor: not-allowed;
+}
+.footer--bottom{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
 }
 
 @media screen and (min-width: 768px) {

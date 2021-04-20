@@ -22,12 +22,15 @@
     text-decoration: none; 
     color: var(--color-on-primary);
 }
-.lien:hover, .lien:focus{
-    color: var(--color-secondary-variant);
-}
-
 .lien:visited{
-    color: rgb(19, 54, 129);
+    color: var(--color-primary-visited);
+}
+.lien:hover, .lien:focus{
+    color: var(--color-primary-hover-variant);
+}
+.btn:hover, .btn:focus{
+    background-color: var(--color-primary-hover);
+	color: var(--color-on-primary);
 }
 .section--telechargement .lien:visited{
     color: #000;
@@ -36,7 +39,7 @@
     color: inherit;
 }
 .menu__el .lien:hover{
-    color: var(--color-primary-hover);
+    color: var(--color-primary-hover-menu);
 }
 .boxShadow{
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
