@@ -145,6 +145,66 @@ body[data-menu] .main {
 .footer{
     background-color: var(--color-primary);
 }
+/* UI-KIT */
+.rectangle {
+    display: flex;
+    box-sizing: border-box;
+    height: 125px;
+    width: 125px;
+    max-width: 100%;
+    border: 2.13px solid #2B2B2A;
+    max-width: 100%;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.rectangle--primary {
+    color: var(--color-on-primary);
+    background-color: var(--color-primary);
+}
+.rectangle--primary-variant {
+    color: var(--color-on-primary);
+    background-color: var(--color-primary-variant);
+}
+.rectangle--secondary {
+    color: var(--color-on-secondary);
+    background-color: var(--color-secondary);
+}
+.rectangle--secondary-variant {
+    color: var(--color-on-secondary);
+    background-color: var(--color-secondary-variant);
+}
+.rectangle--background {
+    color: var(--color-on-background);
+    background-color: var(--color-background);
+}
+.rectangle--error {
+    color: var(--color-on-error);
+    background-color: var(--color-error);
+}
+.rectangle--hover{
+	color: var(--color-on-primary-hover);
+    background-color: var(--color-primary-hover);
+}
+.btn--center{
+	text-align: center;
+}
+.btn--bouton {
+    margin-top: 18px;
+    background-color: var(--color-primary);
+    border-radius: 15px;
+    padding: 13px 20px;
+    text-transform: uppercase;
+    border: inherit;
+    -webkit-box-shadow: 0 4px 4px 0 rgba(0,0,0,.3);
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,.3);
+}
+.disabled:enabled {
+    opacity: .6;
+    cursor: not-allowed;
+}
+
 @media screen and (min-width: 768px) {
 	.title--troisLigne{
 		max-width: 400px;

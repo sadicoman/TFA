@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Projet TFA</title>
+	<title>Projet TFA Ui-kit</title>
 	<link href="assets/css/main.css" rel="stylesheet" >
 	<script src="assets/js/main.min.js" defer></script>
 
@@ -49,18 +49,6 @@
 <body class="body">
 	<header class="header boxShadow">
 		<a href="index.html" class=" pgridRow-start1"><img class="header__img" src="assets/images/Logo_Phasmidae.svg" alt="Logo Phasmidaé"></a>
-		<nav class="menu tgrid-start1 tgrid-end3">
-			<ul class="menu__liste grid--nav">
-				<li class="menu__el"><a href="#oeufs" class="lien">OEUFS</a></li>
-				<li class="menu__el"><a href="#alimentation" class="lien">ALIMENTATION</a></li>
-				<li class="menu__el"><a href="#matériel" class="lien">MATÉRIEL</a></li>
-				<li class="menu__el"><a href="#téléchargement" class="lien">TÉLÉCHARGEMENT</a></li>
-			</ul>
-		</nav>
-		<button class="navBtn">
-			<svg class="navBtn__svg" id="navBtn--bergur" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  width="36px" height="36px"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
-			<svg class="navBtn__svg navBtn--croix" id="navBtn--croix" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  width="36px" height="36px"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-		</button>   
 		<div class="switch header__btn tgridRow-start1" id="switch">
 			<input type="checkbox" class="checkbox js-theme-trigger" id="chk">
 			<label class="label" for="chk">
@@ -82,43 +70,28 @@
 		</div>
 	</header>
 	<main class="main">
-		<section class="section section--phasmidae grid">
-			<h1 class="title pgrid-start2">PHASMIDAÉ</h1>
-			<h2 class="title title--h2 title--troisLigne pgrid-start2">C’est&nbsp;une brindille&nbsp;!
-				C’est une feuille&nbsp;! 
-				Non&nbsp;c’est un phasme&nbsp;!</h2>
-			<h3 class="title title--h3 tgrid-end4 pgrid-start2 pgrid-end5">Phasmidaé,&nbsp;l'application pour bien élever vos phasmes ramulus et phylium&nbsp;!</h3>
+		<section class="section grid">
+			<h1 class="title">PHASMIDAÉ Ui-kit</h1>
+            <h2 class="title">Title h1</h2>
+			<h2 class="title title--h2">Title h2</h2>
+			<h3 class="title title--h3">Title h3</h3>
+            <p class="tgrid-end4">Vous en avez assez de chercher des informations basiques sur l'élevage de phasme ?  Vous trouvez que les informations sont disparates ?  Avec Phasmidaé, trouvé toutes les informations que vous voulez vraiment !</p>
 		</section>
-		<section class="section section--caracteristique grid">
-			<img class="images tgrid-start4 pgrid-start2 pgrid-end5 pgridRow-start1"  src="assets/images/pasmidae_gsm.png" srcset="assets/images/pasmidae_gsm@2x.png 2x" alt=" "/>
-			<p class="tgrid-end4 tgridRow-start1 pgrid-start4 pgrid-end7">Vous&nbsp;en avez assez de chercher des informations basiques sur l'élevage de phasme&nbsp;?&nbsp;
-				Vous&nbsp;trouvez que les informations sont disparates&nbsp;?&nbsp;
-				Avec&nbsp;Phasmidaé,&nbsp;trouvé toutes les informations que vous voulez vraiment&nbsp;!</p>
-		</section>
-		<section id="oeufs" class="section section--oeufs grid">
-			<h2 class="title title--h2">Trois&nbsp;grands&nbsp;principes</h2>
-			<ul class="icone pgrid-start2 pgrid-end7">
-				<li class="icone__el icone--oeufs grid grid--icone" id="oeufs">
-					<img class="mgrid-start2 mgrid-end4 tgrid-start2 tgrid-end3" src="assets/images/oeufs_actif.svg" alt="">
-					<h3 class="title title--h3">Des&nbsp;petits oeufs&nbsp;!</h3>
-					<p>Les&nbsp;bons trucs à savoir pour bien s'occuper de nos petits&nbsp;œufs</p>
-				</li>
-				<li class="icone__el icone--feuille grid grid--icone" id="alimentation">
-					<img class="mgrid-start2 mgrid-end4 tgrid-start2 tgrid-end3" src="assets/images/feuille_actif.svg" alt="">
-					<h3 class="title title--h3 tgrid-end4">Un&nbsp;bon repas&nbsp;!</h3>
-					<p>Les&nbsp;meilleurs choix de nourriture par rapport à mais différentes expérience&nbsp;personnelle</p>
-				</li>
-				<li class="icone__el icone--boite grid grid--icone" id="matériel">
-					<img class="mgrid-start2 mgrid-end4 tgrid-start2 tgrid-end3" src="assets/images/boite_actif.svg" alt="">
-					<h3 class="title title--h3">Un&nbsp;peu de matériel&nbsp;!</h3>
-					<p>Tout&nbsp;le matériel minimum pour bien s'en&nbsp;n'occupé</p>
-				</li>
-			</ul>
-		</section>
-		<section id="téléchargement" class="section section--telechargement grid">
-			<p class="bold">Tester&nbsp;l'application dès&nbsp;maintenant</p> 
-			<a href="mvp/index.html" class="btn lien boxShadow">TESTER L'APPLICATION</a>
-		</section>
+        <section class="section grid">
+            <h2 class="title title--h2">Couleur :</h2>
+            <span class="rectangle rectangle--primary mgrid-end2">primary</span>
+            <span class="rectangle rectangle--primary-variant mgrid-start2 tgrid-end3">primary-variant</span>
+            <span class="rectangle rectangle--secondary mgrid-end2 tgrid-start3 tgrid-end4">secondary</span>
+            <span class="rectangle rectangle--secondary-variant mgrid-start2 tgrid-start1 tgrid-end2 pgrid-start4 pgrid-end5">secondary-variant</span>
+            <span class="rectangle rectangle--background mgrid-end2 tgrid-start2 tgrid-end3 pgrid-start5 pgrid-end6">background</span>
+            <span class="rectangle rectangle--error mgrid-start2 tgrid-start3 tgrid-end4 pgrid-start6 pgrid-end7">error</span>
+            <span class="rectangle rectangle--hover pgrid-start7 pgrid-end8">color-primary-hover</span>
+        </section>
+        <section class="section grid">
+            <h2 class="title title--h2">Bouton :</h2>
+            <a href="#" class="btn lien boxShadow btn--center pgrid-end4">Bouton</a>
+            <button id="ramulus" class="btn--bouton disabled pgrid-start5" data-filter="ramulus">Bouton Disabled</button>
+        </section>
 	</main>
 	<footer class="footer boxShadow">
 		<div class="grid grid--foter">
