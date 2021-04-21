@@ -12,6 +12,9 @@
 /* BODY */
 body[data-theme="dark"] {
     background: radial-gradient(circle, #045D10 0%, #03440C 100%);
+	.rectangle--background{
+		background: radial-gradient(circle, #045D10 0%, #03440C 100%);
+	}
 }
 
 /* Burger Menu */
@@ -207,6 +210,9 @@ body[data-menu] .main {
 	left: 0px;
 	right: 0px;
 }
+// .icone{
+// 	width: 50%;
+// }
 
 @media screen and (min-width: 768px) {
 	.title--troisLigne{

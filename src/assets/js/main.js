@@ -30,37 +30,39 @@ function toggleTheme(){
 
 /*-----Burger Menu-----*/
 let navButton = document.querySelector(".navBtn");
-navButton.addEventListener("click", toggleNavigation);
-
-function toggleNavigation(){
-    if(document.body.hasAttribute("data-menu")){
-        document.body.removeAttribute("data-menu");
-        document.getElementById("navBtn--bergur").style.display = "inherit";
-        document.getElementById("navBtn--croix").style.display = "none";
-        document.getElementById("switch").style.display = "inherit";
-    }else{
-        document.body.setAttribute("data-menu", true);
-        document.getElementById("navBtn--bergur").style.display = "none";
-        document.getElementById("navBtn--croix").style.display = "inherit";
-        document.getElementById("switch").style.display = "none";
-    }
-}
-/*-------------burger menu fermeture-----------------*/
-if (window.matchMedia("(max-width: 767px)").matches) {
-    let menuStop = document.querySelector(".menu__liste");
-    menuStop.addEventListener("click", StopMenu);
-
-    function StopMenu (){
-        if(!document.body.hasAttribute("data-menu")){
-            document.body.setAttribute("data-menu", false);
-        } else {
+if(navButton){
+    navButton.addEventListener("click", toggleNavigation);
+    function toggleNavigation(){
+        if(document.body.hasAttribute("data-menu")){
             document.body.removeAttribute("data-menu");
-            document.getElementById("navBtn--croix").style.display = "none";
             document.getElementById("navBtn--bergur").style.display = "inherit";
+            document.getElementById("navBtn--croix").style.display = "none";
             document.getElementById("switch").style.display = "inherit";
+        }else{
+            document.body.setAttribute("data-menu", true);
+            document.getElementById("navBtn--bergur").style.display = "none";
+            document.getElementById("navBtn--croix").style.display = "inherit";
+            document.getElementById("switch").style.display = "none";
+        }   
+    }
+    /*-------------burger menu fermeture-----------------*/
+    if (window.matchMedia("(max-width: 767px)").matches) {
+        let menuStop = document.querySelector(".menu__liste");
+        menuStop.addEventListener("click", StopMenu);
+
+        function StopMenu (){
+            if(!document.body.hasAttribute("data-menu")){
+                document.body.setAttribute("data-menu", false);
+            } else {
+                document.body.removeAttribute("data-menu");
+                document.getElementById("navBtn--croix").style.display = "none";
+                document.getElementById("navBtn--bergur").style.display = "inherit";
+                document.getElementById("switch").style.display = "inherit";
+            }
         }
     }
 }
+
 
 /*----- Copyright -----*/
 
