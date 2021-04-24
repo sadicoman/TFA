@@ -49,19 +49,27 @@
     font-size: 18px;
     line-height: 1.5;
     color:var(--color-on-background);
-    background-color: var(--color-background);
+    background-color: #f1f1f1f1;
 }
-
+/* BODY Dark*/
+body[data-theme="dark"] {
+    background: radial-gradient(circle, #045D10 0%, #03440C 100%);
+    color: var(--color-on-background);
+	.rectangle--background{
+		background: radial-gradient(circle, #045D10 0%, #03440C 100%);
+	}
+}
+ 
 /* Styles des TITRES */
 .title{
-    font-size: 34px;
+    font-size: 1.8888888888888888em;
     font-family: v.$font-title;
 }
 .title--h2{
-    font-size: 27px;
+    font-size: 1.5em;
 }
 .title--h3{
-    font-size: 22px;
+    font-size: 1.2222222222222223em;
 }
 
 /* Main */
@@ -69,17 +77,30 @@
     font-weight: bold;
 }
 
+@media screen and (min-width: 768px) {
+    .title{
+        font-size: 2em;
+    }
+    .title--h2{
+        font-size: 1.4em;
+    }
+    .title--h3{
+        font-size: 1.2em;
+    }
+}
+
 @media screen and (min-width: 1440px) {
     .body{
         font-size: 1.3em; 
     }
     .title{
-        font-size:3.1666666666666665em;
+        font-size:2.6em;
+        width: 90%;
     }
     .title--h2{
-        font-size: 2.388888888888889em;
+        font-size: 2em;
     }
     .title--h3{
-        font-size: 1.7777777777777777em;
+        font-size: 1.6em;
     }
 }

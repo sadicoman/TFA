@@ -8,7 +8,6 @@
 	--color-primary-variant:	  #069E2D;
 	--color-secondary:			  #058E3F;
 	--color-secondary-variant:	  #04773B;
-	--color-background:			  #F1F1F1;	
 	--color-error:				  #FF0000;
 	--color-primary-hover:		  #99c41a;
 	--color-primary-hover-variant:#003117;
@@ -25,7 +24,6 @@
 	--color-primary-variant:	  #069E2D;
 	--color-secondary:			  #058E3F;
 	--color-secondary-variant:	  #04773B;
-	--color-background:			  #F1F1F1;	
 	--color-error:				  #FF0000;
 	--color-primary-hover:		  #99c41a;
 	--color-primary-hover-variant:#003117;
@@ -37,23 +35,7 @@
 	--color-on-error:			  #000000;
 	--color-on-primary-hover:	  #000000;   
 }
-@media (prefers-color-scheme: dark) {
-	:root{
-		--color-primary:			#06B131;
-		--color-primary-variant:	#069E2D;
-		--color-secondary:			#058E3F;
-		--color-secondary-variant:	#04773B;
-		--color-error:				#FF0000;
-		--color-primary-hover:		#B6EA20;
-		--color-primary-hover-menu:	#B6EA20;
-		--color-primary-visited:	#001e5b;
-		--color-on-primary:			#000000;
-		--color-on-secondary:		#000000;
-		--color-on-background:		#ffffff;
-		--color-on-error:			#000000;
-		--color-on-primary-hover:	#000000;  
-	}
-}
+
 [data-theme="dark"]{
 	--color-primary:			#06B131;
 	--color-primary-variant:	#069E2D;
