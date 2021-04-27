@@ -4,6 +4,18 @@
 
 @use "_var.scss";
 
+/* PROGRESS BAR */
+.progress-bar {
+    position: fixed;
+    top: 0;
+    height: 8px;
+    width: 0;
+    background-image: linear-gradient(90deg, var(--color-primary) 0%, var(--color-secondary-variant) 100%);
+    z-index: 11;
+    transition: width .2s;
+    will-change: width;
+}
+
 /* HEADER */
 .header__img{
 	width: 100%;
@@ -48,6 +60,7 @@ body[data-menu] .main {
 .header{
     padding: 10px;
     margin-bottom: 36px;
+	border-bottom: solid 1px var(--color-ligne);
 }
 .menu{
     display: none;
@@ -114,25 +127,42 @@ body[data-menu] .main {
 .section:last-child{
     margin-bottom: 72px;
 }
+.main{
+	max-width: 450px;
+	margin: auto;
+}
 .btn{
     margin-top: 18px;
     background-color: var(--color-primary);
     border-radius: 15px;
-    padding: 10px 20px;
+    padding: 30px 40px 25px 40px;
+	font-size: 1.2em;
+	text-align: center;
     text-transform: uppercase;
+	letter-spacing: 1.3px;
 }
 .icone__el{
 	text-align: center;
-	border-bottom: 1.5px solid var(--color-secondary-variant);
+	border-bottom: 1.5px solid var(--color-ligne);
 }
+.icone__el > *{
+	align-self: center;
+	justify-self:center;
+}
+
 .icone__el:last-child{
 	border: none;
 }
 .icone__el>:last-child{
 	padding-bottom: 18px;
+	text-align: left;
+	max-width: 250px;
 }
 .icone__el>:first-child{
-	padding-top: 18px;
+	// padding-top: 18px;
+}
+.icone__el:nth-child(2)>:first-child{
+	padding-top: 13px;
 }
 .images{
 	width: 100%;
@@ -208,7 +238,8 @@ body[data-menu] .main {
 	right: 0px;
 }
 .el__image{
-	max-width: 50%;
+	width: 100%;
+	max-height:120px;
 	justify-self: center;
 }
 
@@ -223,13 +254,24 @@ body[data-menu] .main {
 		display: none;
 	}
 	.icone__el{
-		border-right: 1.5px solid var(--color-secondary-variant);
+		border-right: 1.5px solid var(--color-ligne);
 		border-bottom: none;
+	}
+	.main{
+		max-width: 800px;
+		margin: auto;
+	}
+	.header__img{
+		width: 50%;
+	}
+	.header{
+		padding: 20px;
 	}
 }
 
 @media screen and (min-width: 1440px) {
 	.header__img{
+		width: 100%;
 		max-width: 300px;
 	}
 	.header {

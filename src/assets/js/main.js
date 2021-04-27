@@ -70,3 +70,23 @@ let date = new Date().getFullYear();
 
 document.getElementById("year").innerHTML = date;
 
+
+/*-------------Progress-bar-----------------*/
+let caseStudy = document.querySelector(".body--caseStudy");
+if(caseStudy){
+    const body = document.body;
+    const progressBar = document.querySelector('.progress-bar');
+    function stretch() {
+      const pixelScrolled = window.scrollY;
+      const viewportHeight = window.innerHeight;
+      const totalContentHeight = body.scrollHeight;   
+      const pixelToPerc = (pixelScrolled / (totalContentHeight - viewportHeight)) * 100;
+      progressBar.style.width = Math.round(pixelToPerc) + '%';
+    }
+    window.addEventListener('scroll', stretch);
+}
+
+
+
+
+/*--------------------------------------------*/

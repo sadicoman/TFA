@@ -136,7 +136,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-    .grid {
+    .grid, .header{
         grid-template-columns: repeat(7, 1fr);
         grid-gap: 36px 54px;
         margin-bottom: 5em;
@@ -146,6 +146,10 @@
     }
     .grid > *{
         grid-column: 2 / 5;
+    }
+    .header > *{
+        grid-column: 1 / -1;
+        align-self:center;
     }
     // .section--icone > *{
     //     grid-column: 1 / -1;
@@ -198,12 +202,9 @@
     .grid--icone{
         grid-template-columns: 1fr 2fr 1fr;
     }
-    .header{
-        grid-template-columns: repeat(4, 1fr);
-    }
-    .header > *{
-        grid-column: 2 / -2;
-    }
+    // .header{
+    //     grid-template-columns: repeat(4, 1fr);
+    // }
     .section--icone .icone{
         width: 160px;
         grid-gap: 0px 18px;
